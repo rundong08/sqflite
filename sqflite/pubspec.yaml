@@ -11,8 +11,14 @@ environment:
 
 flutter:
   plugin:
-    androidPackage: com.tekartik.sqflite
-    pluginClass: SqflitePlugin
+    platforms:
+      android:
+        package: com.tekartik.sqflite
+        pluginClass: SqflitePlugin
+      ios:
+        pluginClass: SqflitePlugin
+      macos:
+        pluginClass: SqflitePlugin
 
 dependencies:
   flutter:
